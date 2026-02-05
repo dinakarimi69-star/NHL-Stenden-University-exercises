@@ -57,3 +57,22 @@ Solution:
 
 3.Aligning axis labels with plotted data
 find the debugging version as Exercise3(1).py file
+
+Exercise4:
+
+problems:
+When the batch_size is changed from 32 to 64, a ValueError occurs:
+ValueError: "Using a target size (torch.Size([128, 1])) that is different to the input size (torch.Size([96, 1])) is deprecated. Please ensure they have the same size."
+
+This is due to the fact that the batch size influences the shape of the real and generated samples. If the batch size is not properly taken care of, as in the loss calculation steps, it will lead to a mismatch in the tensor sizes.
+Solution:
+we should ensure that either the real samples and generated samples are handled, Particularly, the loss calculations should properly handle the batch size, and the size of real_samples_labels and generated_samples_labels should match the batch size.
+
+Cosmetic Bug:
+
+problem:
+The Discriminator and Generator loss are printed, but the displayed figure of the output (i.e., the generated images) is not clear or is displayed incorrectly.
+solution: 
+we should ensure that the losses are correctly displayed and formatted, and the output figure is updated correctly.
+
+find the debugging version as exercise4.py file 
