@@ -6,7 +6,9 @@ The method id_to_fruit() trys to return a fruit from the set based on its index 
 the returned results do not matched outputs:
 
 Index 1 → "orange" ,
+
 Index 3 → "kiwi" ,  
+
 Index 4 → "strawberry" ,
 
 Solution:
