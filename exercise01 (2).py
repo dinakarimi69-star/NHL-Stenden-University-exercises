@@ -11,9 +11,6 @@ import torchvision
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 
-# Utility Functions
-
-
 def id_to_fruit(fruit_id: int, fruits: Set[str]) -> str:
     """Convert numeric fruit ID to fruit name."""
     fruits_list = sorted(list(fruits))
@@ -161,12 +158,13 @@ if __name__ == "__main__":
     fruits = {"apple", "orange", "melon", "kiwi", "strawberry"}
     print("Fruit with ID 2:", id_to_fruit(2, fruits))
 
-    # Test swap
+
     coords = np.array([[10, 5, 15, 6, 0], [5, 3, 13, 6, 1]])
     print("Swapped coords:\n", swap(coords))
 
-    # Optional: Plot CSV if exists
+  
     plot_data("exercise1.csv")
 
-    # Train GAN
+
     train_gan(batch_size=32, num_epochs=5)
+
