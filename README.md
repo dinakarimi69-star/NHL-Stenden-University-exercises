@@ -14,3 +14,8 @@ Index 4 → "strawberry"
 Solution:
 
 To fix this issue, we need to sort the set into a list before indexing it. Sorting guarantees a deterministic order and allows us to safely access fruits by their index.
+
+EXERCISE2:
+
+Problem:
+The function is expected to return a new NumPy array where the x and y coordinates are flipped for every bounding box. However, the returned result is incorrect.
