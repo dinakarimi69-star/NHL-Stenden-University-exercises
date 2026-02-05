@@ -2,7 +2,12 @@
 debugging exercise1
 This exercise focuses on identifying and fixing a logical bug in a Python function that maps a numeric ID to a fruit name. The debugging process required understanding Python data structures and correcting incorrect assumptions about element ordering.
 problem:
-The method id_to_fruit() trys to return a fruit from the set based on its index (fruit_id). However, the function is returning incorrect results for the given indices. This is because sets in Python are unordered collections, which means there’s no predictable order for the elements inside a set and data structure is wrong. In Python, sets are unordered
+The method id_to_fruit() trys to return a fruit from the set based on its index (fruit_id). However, the function is returning incorrect results for the given indices. This is because sets in Python are unordered collections, which means there’s no predictable order for the elements inside a set and data structure is wrong. In Python, sets are unordered:
+the returned results do not matched outputs:
+
+Index 1 → "orange"
+Index 3 → "kiwi"
+Index 4 → "strawberry"
 
 Solution:
 
